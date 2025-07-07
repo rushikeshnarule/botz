@@ -110,7 +110,7 @@ async def get_nvidia_response_text(payload):
         return f"Error: {e}"
 
 def get_app():
-    app = ApplicationBuilder().token("8164728305:AAF8JwZ-OlmPT6ySYUsj7c3UhERF8uQUtLU").build()
+    app = ApplicationBuilder().token("7881550320:AAEFrVIkdB23sqMCzWZlMNbyXlnwVNrbVBI").build()
     app.add_handler(CommandHandler("start", start))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
     app.add_handler(MessageHandler(filters.PHOTO, handle_photo))
